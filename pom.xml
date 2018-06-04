@@ -59,22 +59,24 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
+				<version>2.19</version>
 				<configuration>
-					<systemPropertyVariables>
+					<!-- <systemPropertyVariables>
 							<userName>${DuserName}</userName>
 							<password>${Dpassword}</password>
 							<implicitWait>${DimplicitWait}</implicitWait>
 							<explicitWait>${DexplicitWait}</explicitWait>
 					</systemPropertyVariables>
+					-->
 					<!-- Old design where we can hard code TestNG suite in pom.xml -->
-					<!-- <suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/testSuite/regression.xml</suiteXmlFile>
+					 <suiteXmlFiles>
+						<!--<suiteXmlFile>src/main/resources/testSuite/regression.xml</suiteXmlFile>-->
 						<suiteXmlFile>testNG.xml</suiteXmlFile>
-					</suiteXmlFiles> -->
-					<suiteXmlFiles>
+					</suiteXmlFiles> 
+					<!--  <suiteXmlFiles>
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
+					-->
 				</configuration>
 			</plugin>
 		</plugins>
