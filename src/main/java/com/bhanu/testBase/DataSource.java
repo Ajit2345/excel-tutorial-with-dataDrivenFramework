@@ -57,18 +57,18 @@ public class DataSource {
 	
 	public static long getImplicitWait() {
 		// this is used to read data from properties file
-		return Integer.parseInt(OR.getProperty("implicitWait"));
+//		return Integer.parseInt(OR.getProperty("implicitWait"));
 		// to read same data from Jenkin parameters
-//		System.out.println(System.getProperty("implicitWait"));
-//		return Integer.parseInt(System.getProperty("implicitWait"));
+		System.out.println(System.getProperty("implicitWait"));
+		return Integer.parseInt(System.getProperty("implicitWait"));
 	}
 
 	public static long getExplicitWait() {
 		// this is used to read data from properties file
-		return Integer.parseInt(OR.getProperty("explicitWait"));
+//		return Integer.parseInt(OR.getProperty("explicitWait"));
 		// to read same data from Jenkin parameters
-//		System.out.println(System.getProperty("explicitWait"));
-//		return Integer.parseInt(System.getProperty("explicitWait"));
+		System.out.println(System.getProperty("explicitWait"));
+		return Integer.parseInt(System.getProperty("explicitWait"));
 	}
 
 	public static long getPageLoadTime() {

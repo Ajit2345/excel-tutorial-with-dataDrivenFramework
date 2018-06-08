@@ -12,6 +12,10 @@
       <class name="com.bhanu.testScripts.leads.CreatesLeads"/>
     </classes>
   </test> <!-- Test -->
-  
+  <test name="JenkinTest">
+    <classes>
+      <class name="com.bhanu.testScripts.login.JenkinTest"/>
+    </classes>
+  </test> <!-- Test -->
   
 </suite> <!-- Suite -->
